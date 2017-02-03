@@ -1,5 +1,7 @@
 # TVForMe
 
+# Created/compatible with Xcode 7.3.1
+# Latest iOS version (Deployment Target): 9.3
 
 # TVForMe is an iOS application which acts as a hub for TV show information obtained through the 
 # utilization of JSON responses from multiple APIs (mostly TVmaze and TVDb)). The application
