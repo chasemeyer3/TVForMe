@@ -1,0 +1,10 @@
+# TVForMe
+
+
+# TVForMe is an iOS application which acts as a hub for TV show information obtained through the 
+# utilization of JSON responses from multiple APIs (mostly TVmaze and TVDb)). The application
+# integrates calendar functionality to keep track of show times and makes user specific recommendations 
+# for new shows to watch.
+
+# This is an updated version of the TVFor me app, some bugs were removed from the previous version posted to git. 
+# This version is still a work in progress.  
