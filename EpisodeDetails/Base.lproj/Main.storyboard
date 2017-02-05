@@ -12,22 +12,22 @@
             <objects>
                 <tableViewController id="CkD-m6-Xr7" customClass="RecommendedTableViewController" customModule="TVForMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" sectionHeaderHeight="28" sectionFooterHeight="28" id="3gE-4G-Dkq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecommendedCategory" rowHeight="190" id="rXI-kS-bIE" customClass="RecommendedCategoryCell" customModule="TVForMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="190"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="190"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rXI-kS-bIE" id="SXq-8l-dhI">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="189.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="189.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aCu-vP-cP3" userLabel="Category Name and Shows">
-                                            <rect key="frame" x="8" y="15" width="584" height="167"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aCu-vP-cP3" userLabel="Category Name and Shows">
+                                            <rect key="frame" x="8" y="15" width="398" height="167"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Lo5-n2-U78" userLabel="Category">
-                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="21"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Lo5-n2-U78" userLabel="Category">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="21"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Category Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZ1-eM-3Dg" userLabel="Category Name">
                                                             <rect key="frame" x="0.0" y="0.0" width="131" height="21"/>
@@ -38,8 +38,8 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXa-Jr-koJ">
-                                                            <rect key="frame" x="131" y="0.0" width="453" height="21"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXa-Jr-koJ">
+                                                            <rect key="frame" x="131" y="0.0" width="267" height="21"/>
                                                             <state key="normal" title="Show More"/>
                                                             <connections>
                                                                 <segue destination="DO2-mP-gV6" kind="show" identifier="OnTonightSegue" id="frF-M2-2GA"/>
@@ -47,8 +47,8 @@
                                                         </button>
                                                     </subviews>
                                                 </stackView>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-A5-572" userLabel="Shows in Category">
-                                                    <rect key="frame" x="0.0" y="26" width="584" height="141"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-A5-572" userLabel="Shows in Category">
+                                                    <rect key="frame" x="0.0" y="26" width="398" height="141"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="141" id="v3u-Hb-v5O"/>
@@ -190,7 +190,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zhp-MA-k2w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mn3-FM-S1k">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irS-2S-ilc">
@@ -301,7 +301,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iIU-Yq-VPo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wY8-Eg-NSy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="225" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wxo-Wd-FML">
@@ -310,7 +310,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecommendedCell" rowHeight="235" id="EWr-TD-JlC" customClass="RecommendedCell" customModule="TVForMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="235"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="235"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EWr-TD-JlC" id="Qgj-h3-yf7">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="234.5"/>
@@ -419,7 +419,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AiringSoonCell" rowHeight="155" id="eXf-Xb-vgg" customClass="AiringSoonCell" customModule="TVForMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="263" width="600" height="155"/>
+                                        <rect key="frame" x="0.0" y="327" width="600" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eXf-Xb-vgg" id="ih2-OB-0d8">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="154.5"/>
@@ -535,7 +535,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nwW-FF-QOS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aAy-b6-0Ck">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dUV-kf-s7Z">
@@ -543,7 +543,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="showTableViewCell" rowHeight="118" id="dUJ-vV-IJe" customClass="ShowTableViewCell" customModule="TVForMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="118"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUJ-vV-IJe" id="SIr-R4-6wI">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="117.5"/>
@@ -653,7 +653,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShowsMoreInfoTableViewCell" rowHeight="177" id="u7Z-Gf-hH0" customClass="ShowsMoreInfoTableViewCell" customModule="TVForMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="177"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="177"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7Z-Gf-hH0" id="Rem-ly-Xue">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="176.5"/>
@@ -934,7 +934,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Qyh-WL-oXM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WMz-pH-3hO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-dv-UTn">
@@ -942,7 +942,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeasonsTableViewCell" id="IeC-Ox-6xi" customClass="SeasonsTableViewCell" customModule="TVForMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="107" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="107" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IeC-Ox-6xi" id="AOQ-GN-WCo">
                                             <rect key="frame" x="0.0" y="0.0" width="107" height="43.5"/>
@@ -1009,13 +1009,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbL-TI-Hpz">
-                                <rect key="frame" x="455" y="214" width="125" height="30"/>
+                                <rect key="frame" x="269" y="214" width="125" height="30"/>
                                 <state key="normal" title="add tv show to list"/>
                                 <connections>
                                     <action selector="addShowToList" destination="BSN-jt-Xi9" eventType="touchUpInside" id="OE1-be-uZK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pw-rs-eYv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3pw-rs-eYv">
                                 <rect key="frame" x="20" y="74" width="84" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="YS3-Ak-N4Z"/>
@@ -1033,7 +1033,7 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvj-lX-TUk">
-                                <rect key="frame" x="112" y="98" width="468" height="45"/>
+                                <rect key="frame" x="112" y="98" width="282" height="45"/>
                                 <string key="text">Info about the tv series, the main points, or a summary from the data using some get methods to get the information for the tv show</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1084,7 +1084,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wCZ-HC-v3Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cy2-Az-VoK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6M-oD-AqF">
@@ -1092,7 +1092,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EpisodeTableViewCell" id="8hu-rv-MI5" customClass="EpisodeTableViewCell" customModule="TVForMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="107" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="107" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8hu-rv-MI5" id="0zC-Ke-cEI">
                                             <rect key="frame" x="0.0" y="0.0" width="107" height="43.5"/>
@@ -1121,7 +1121,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isq-B6-1hY">
-                                <rect key="frame" x="112" y="102" width="468" height="45"/>
+                                <rect key="frame" x="112" y="102" width="282" height="45"/>
                                 <string key="text">Info about the tv series, the main points, or a summary from the data using some get methods to get the information for the tv show</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1156,7 +1156,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D27-Pg-5xR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D27-Pg-5xR">
                                 <rect key="frame" x="20" y="74" width="84" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="99Y-p3-sZ3"/>
@@ -1205,24 +1205,24 @@
             <objects>
                 <tableViewController id="DO2-mP-gV6" customClass="OnTonightTableViewController" customModule="TVForMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" id="adB-zS-UQW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShowAirtime" rowHeight="115" id="5Gu-NX-KHr" customClass="ShowAirtimeCell" customModule="TVForMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="115"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Gu-NX-KHr" id="sr4-8e-NZj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="114.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="114.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Network)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEC-Mu-f7D">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Network)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEC-Mu-f7D">
                                             <rect key="frame" x="532" y="90" width="60" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-0H-9NG">
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-0H-9NG">
                                             <rect key="frame" x="268" y="13" width="65" height="60"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwv-mm-zPg">
@@ -1289,27 +1289,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv8-QU-xAh">
+                                <rect key="frame" x="20" y="686" width="374" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="22"/>
+                                <state key="normal" title="Continue To Shows">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pTZ-2J-ZEQ" kind="show" id="awB-M5-7aJ"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J38-4f-vq6" customClass="TVScreenView" customModule="TVForMe" customModuleProvider="target">
-                                <rect key="frame" x="21" y="29" width="370" height="625"/>
+                                <rect key="frame" x="22" y="28" width="372" height="654"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shz-Re-tDr">
                                         <rect key="frame" x="47" y="229" width="240" height="128"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.76888465881347656" blue="0.55298113822937012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="imageView" destination="shz-Re-tDr" id="zu8-Db-cx0"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv8-QU-xAh">
-                                <rect key="frame" x="141" y="686" width="132" height="30"/>
-                                <state key="normal" title="Continue To Shows"/>
-                                <connections>
-                                    <segue destination="pTZ-2J-ZEQ" kind="show" id="awB-M5-7aJ"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.76888465881347656" blue="0.55298113822937012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="J38-4f-vq6" firstAttribute="centerY" secondItem="6RT-oW-v2U" secondAttribute="centerY" id="FGW-W1-e2x"/>
                             <constraint firstItem="EKh-ZS-XRw" firstAttribute="top" secondItem="fv8-QU-xAh" secondAttribute="bottom" constant="20" id="SBg-Ef-mXg"/>
@@ -1323,16 +1331,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVK-Ks-RsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.5" y="-325.5"/>
+            <point key="canvasLocation" x="47" y="-326"/>
         </scene>
     </scenes>
     <resources>
         <image name="a" width="430" height="573"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9pz-Oi-Sgm"/>
-        <segue reference="3mj-rd-eRK"/>
+        <segue reference="awB-M5-7aJ"/>
         <segue reference="F4q-sy-Kd6"/>
+        <segue reference="3mj-rd-eRK"/>
         <segue reference="42f-Mu-YpO"/>
     </inferredMetricsTieBreakers>
 </document>

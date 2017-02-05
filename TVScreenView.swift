@@ -19,8 +19,8 @@ class TVScreenView: UIView {
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         drawTV()
-        drawUTLabel()
         drawTVLabel()
+        drawForMeLabel()
         imageView.frame = CGRect(x: bounds.width * (15/335), y: bounds.height * (200/625), width: bounds.width * (305/335), height: bounds.height * (185/625))
         var count = 0
         var secondsSim = 0.0
@@ -53,88 +53,55 @@ class TVScreenView: UIView {
             
         }
     }
-    
+    // function that draws the "TV" label text using core graphics
     func drawTVLabel(){
         //draw the "T"
         let tOutline = UIBezierPath()
-        tOutline.moveToPoint(CGPoint(x: bounds.width * (36.25/335) , y: bounds.height * (430/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (36.25/335), y: bounds.height * (460/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (86.25/335), y: bounds.height * (460/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (86.25/335), y: bounds.height * (570/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (116.25/335), y: bounds.height * (570/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (116.25/335), y: bounds.height * (460/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (166.25/335), y: bounds.height * (460/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (166.25/335), y: bounds.height * (430/625)))
+        tOutline.moveToPoint(CGPoint(x: bounds.width * (36.25/335) , y: bounds.height * (30/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (36.25/335), y: bounds.height * (60/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (86.25/335), y: bounds.height * (60/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (86.25/335), y: bounds.height * (170/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (116.25/335), y: bounds.height * (170/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (116.25/335), y: bounds.height * (60/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (166.25/335), y: bounds.height * (60/625)))
+        tOutline.addLineToPoint(CGPoint(x: bounds.width * (166.25/335), y: bounds.height * (30/625)))
         tOutline.closePath()
         UIColor.blueColor().setFill()
         tOutline.fill()
         
         // draw the "V"
         let vOutline = UIBezierPath()
-        vOutline.moveToPoint(CGPoint(x: bounds.width * (170/335) , y: bounds.height * (430/625)))
-        vOutline.addLineToPoint(CGPoint(x: bounds.width * (220/335), y: bounds.height * (570/625)))
-        vOutline.addLineToPoint(CGPoint(x: bounds.width * (250/335), y: bounds.height * (570/625)))
-        vOutline.addLineToPoint(CGPoint(x: bounds.width * (300/335), y: bounds.height * (430/625)))
-        vOutline.addLineToPoint(CGPoint(x: bounds.width * (270/335), y: bounds.height * (430/625)))
-        vOutline.addLineToPoint(CGPoint(x: bounds.width * (235/335), y: bounds.height * (540/625)))
-        vOutline.addLineToPoint(CGPoint(x: bounds.width * (200/335), y: bounds.height * (430/625)))
+        vOutline.moveToPoint(CGPoint(x: bounds.width * (170/335) , y: bounds.height * (30/625)))
+        vOutline.addLineToPoint(CGPoint(x: bounds.width * (220/335), y: bounds.height * (170/625)))
+        vOutline.addLineToPoint(CGPoint(x: bounds.width * (250/335), y: bounds.height * (170/625)))
+        vOutline.addLineToPoint(CGPoint(x: bounds.width * (300/335), y: bounds.height * (30/625)))
+        vOutline.addLineToPoint(CGPoint(x: bounds.width * (270/335), y: bounds.height * (30/625)))
+        vOutline.addLineToPoint(CGPoint(x: bounds.width * (235/335), y: bounds.height * (140/625)))
+        vOutline.addLineToPoint(CGPoint(x: bounds.width * (200/335), y: bounds.height * (30/625)))
         vOutline.closePath()
         UIColor.blueColor().setFill()
         vOutline.fill()
     }
     
     
-    func drawUTLabel() {
- 
-        // drawing the left side of the "U" excluding the arc
-        let leftSquare = UIBezierPath()
-        leftSquare.moveToPoint(CGPoint(x: bounds.width * (70/335) , y: bounds.height * (125/625)))
-        leftSquare.addLineToPoint(CGPoint(x: bounds.width * (40/335), y: bounds.height * (125/625)))
-        leftSquare.addLineToPoint(CGPoint(x: bounds.width * (40/335), y: bounds.height * (40/625)))
-        leftSquare.addLineToPoint(CGPoint(x: bounds.width * (70/335) , y: bounds.height * (40/625)))
-        leftSquare.closePath()
-        UIColor.orangeColor().setFill()
-        leftSquare.fill()
+    func drawForMeLabel(){
+        let string: NSString = "ForMe"
+        let fieldColor: UIColor = UIColor.blueColor()
+        // set the font to Helvetica Neue Bold and make it adjustable to screen size
+        let fieldFont = UIFont(name: "HelveticaNeue-Bold", size: bounds.width * (100/335))
+        let paraStyle = NSMutableParagraphStyle()
+        paraStyle.lineSpacing = 6.0
+        let skew = 0.0  // change to italicize font
         
-        // drawing the right side of the "U" excluding the arc
-        let rightSquare = UIBezierPath()
-        rightSquare.moveToPoint(CGPoint(x: bounds.width * (130/335) , y: bounds.height * (125/625)))
-        rightSquare.addLineToPoint(CGPoint(x: bounds.width * (160/335), y: bounds.height * (125/625)))
-        rightSquare.addLineToPoint(CGPoint(x: bounds.width * (160/335), y: bounds.height * (40/625)))
-        rightSquare.addLineToPoint(CGPoint(x: bounds.width * (130/335) , y: bounds.height * (40/625)))
-        rightSquare.closePath()
-        UIColor.orangeColor().setFill()
-        rightSquare.fill()
+        string.drawInRect(CGRectMake(bounds.width * (15/335), bounds.height * (430/625), bounds.width * (315/335), 150.0), withAttributes: [
+            NSForegroundColorAttributeName: fieldColor,
+            NSParagraphStyleAttributeName: paraStyle,
+            NSObliquenessAttributeName: skew,
+            NSFontAttributeName: fieldFont!
+            ])
         
-        // draw the bottom of the "U"
-        let uArc = UIBezierPath()
-        uArc.moveToPoint(CGPoint(x: bounds.width * (40/335) , y: bounds.height * (125/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (70/335), y: bounds.height * (125/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (85/335), y: bounds.height * (150/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (115/335) , y: bounds.height * (150/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (130/335), y: bounds.height * (125/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (160/335) , y: bounds.height * (125/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (130/335), y: bounds.height * (180/625)))
-        uArc.addLineToPoint(CGPoint(x: bounds.width * (70/335) , y: bounds.height * (180/625)))
-        uArc.closePath()
-        UIColor.orangeColor().setFill()
-        uArc.fill()
-
-        
-        //draw the "T"
-        let tOutline = UIBezierPath()
-        tOutline.moveToPoint(CGPoint(x: bounds.width * (166.25/335) , y: bounds.height * (40/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (166.25/335), y: bounds.height * (70/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (216.25/335), y: bounds.height * (70/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (216.25/335), y: bounds.height * (180/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (246.25/335), y: bounds.height * (180/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (246.25/335), y: bounds.height * (70/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (296.25/335), y: bounds.height * (70/625)))
-        tOutline.addLineToPoint(CGPoint(x: bounds.width * (296.25/335), y: bounds.height * (40/625)))
-        tOutline.closePath()
-        UIColor.orangeColor().setFill()
-        tOutline.fill()
     }
+    // function that draws the TV screen using core graphics
     func drawTV (){
         // draw the frame of the tv (black color)
         let frame = UIBezierPath()

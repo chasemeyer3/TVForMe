@@ -126,6 +126,9 @@ func ConvertGenreIDToGenre(genreID: Int) -> String {
     return genre
 }
 
+// the code below is being considered for additional future functionality
+
+
 // function for checking the calender to make sure double events are not added ( currently not implemented)
 //func updateCalWithNewShows() {
 //    getUpcomingShowTimes()
